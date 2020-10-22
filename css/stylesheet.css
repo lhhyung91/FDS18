@@ -64,7 +64,6 @@ a {
     padding-left: 0;
     list-style: none;
     text-align: right;
-    color: red;
 }
 .member li {
   display: inline-block;
@@ -88,7 +87,7 @@ a {
          #f2b830 100%
          );
     border-top: 2px solid currentColor;
-    margin: 10 0 0 0;
+    margin: 10px 0 0 0;
     padding-left: 0;
     list-style: none;
     height: 47px;
@@ -103,8 +102,8 @@ a {
     cursor: pointer;
     font-size: 1.6rem;
     color: #fff;
-    background: transparent;
     font-weight: 700;
+    background: transparent;
     line-height: 45px;
     display: block;
     padding: 0 20px;
@@ -118,6 +117,7 @@ a {
 }
 .menu-act .menu-button::after {
     /* content: "상자"; */
+    content: "";
     display: block;
     border-top: 2px solid #000;
 }
@@ -131,7 +131,7 @@ a {
     /* left: 0; */
     white-space: nowrap;
 }
-.sub-menu li 
+.sub-menu li, 
 .sub-menu a {
     display: inline-block;
 }
@@ -156,17 +156,45 @@ a {
 .menu-act .sub-menu {
     display: block;
 }
-.sub-menu1, .sub-menu2, .sub-menu3 {
+.sub-menu1, 
+.sub-menu2, 
+.sub-menu3 {
     left: 0;
 }
-.sub-menu4 .sub-menu5 .sub-menu6 {
-    /* display: block; */
+.sub-menu4, 
+.sub-menu5, 
+.sub-menu6 {
     right: 0;
+    /* display: block; */
     /* left: initial; */
 }
+/* 텍스트 및 배경 애니메이션 - 비주얼 */
+@keyframes textAni {
+    0%{
+        font-size: 12px;
+        color: rgba(0,0,0,0);
+        transform: translate(0,0);
+    }    
+    100%{
+        font-size: 24px;
+        color: rgba(0,0,0,1);
+        transform: translate(400px,75px);
+    }
+}
+
 .visual {
     background: lime;
     height: 120px;
+    position: relative;
+}
+.visual-text {
+    /* position: absolute; */
+    width: 500px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: textAni;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
 }
 .main {
     background: skyblue;
