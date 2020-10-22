@@ -2,13 +2,15 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 /* 숨김 제목 및 숨김 컨텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
     position: absolute;
     width: 1px;    
     height: 1px;
     margin: 0;
     overflow: hidden;
     clip-path: polygon(0 0, 0 0, 0 0);
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0, 0, 0, 0);
 }
 
 body *, 
@@ -234,6 +236,12 @@ a {
     overflow: hidden;
     min-height: 450px;
 }
+ /* form .fieldset {
+    position: relative;
+}
+fieldset .user-email, fieldset .user-pw {
+    position: absolute;
+} */
 /* .clearfix {
     clear: both;
 } */
