@@ -271,7 +271,7 @@ fieldset .user-email, fieldset .user-pw {
     box-shadow: 5px 5px 0 0 #ccc;
     padding: 15px 10px;
 }
-.login-header {
+.login-heading {
     margin: 0;
     color: #ff0;
     font-size: 1.6rem;
@@ -351,7 +351,7 @@ fieldset .user-email, fieldset .user-pw {
 }
 /* 유효성 검사 배너 */
 .validation-list {
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 25px 0 0 0;
     list-style: none;
     padding-left: 0;
@@ -366,7 +366,18 @@ fieldset .user-email, fieldset .user-pw {
 }
 
 .validation-list a:hover, .validation-list a:focus {
-    clear: red;
+    color: red;
+}
+.term {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+    background: linear-gradient(to bottom, #eee, #ccc);
+}
+.term .p {
+    position: absolute;
+    left: 10px;
 }
 .slogan {
     background: orange;
