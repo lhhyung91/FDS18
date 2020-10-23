@@ -292,8 +292,8 @@ fieldset .user-email, fieldset .user-pw {
     margin: 0;
     position: relative;
 }
-/* .user-email, .user-pw {
-    vertical-align: middle ; */
+.user-email, .user-pw {
+    vertical-align: 5px;
 }
 .user-email *, .user-pw *{
     vertical-align: middle ;
@@ -346,10 +346,31 @@ fieldset .user-email, fieldset .user-pw {
     display:block;
     padding: 8px 0;
 }
+.validation {
+
+}
+/* 유효성 검사 배너 */
+.validation-list {
+    background-color: yellow;
+    margin: 25px 0 0 0;
+    list-style: none;
+    padding-left: 0;
+}
+.validation-list a {
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px, linear-gradient(to bottom, #eee, #ccc);
+    padding: 10px 10px 10px 50px;
+    margin-top: 10px;
+}
+
+.validation-list a:hover, .validation-list a:focus {
+    clear: red;
+}
 .slogan {
     background: orange;
 }
 .footer {
     background: pink;
-    width: 100%;
 }
