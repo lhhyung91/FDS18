@@ -140,7 +140,7 @@ a {
 .sub-menu a {
     padding: 8px 0;
     margin-right: 10px;
-    /* background: skyblue; */
+    background: #fff;
 }
 .sub-menu a::before {
     content: '\f192';
@@ -228,7 +228,8 @@ a {
     animation-fill-mode: forwards;
 }
 .main {
-    background: skyblue;
+    background: #fff;
+    /* background: skyblue; */
     /* display: flex;
     flex-flow: row nowrap;
     justify-content: space-between; */
@@ -255,17 +256,95 @@ fieldset .user-email, fieldset .user-pw {
     float: left;
 }
 .group1 {
-    background: orange;
     width: 250px;
 }
 .group2 {
-    background: lightgreen;
     width: 380px;
 }
 .group3 {
-    background: tomato;
     width: 190px;
-    float: left;
+}
+/* 로그인 */
+.login {
+    background: radial-gradient(circle at right top,#f2b830, #f76c31);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #ccc;
+    padding: 15px 10px;
+}
+.login-header {
+    margin: 0;
+    color: #ff0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-indent: 10px;
+}
+.login-form {
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+.login-form fieldset {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    position: relative;
+}
+/* .user-email, .user-pw {
+    vertical-align: middle ; */
+}
+.user-email *, .user-pw *{
+    vertical-align: middle ;
+}
+
+.login-form label {
+    /* background: yellow; */
+    width: 4em;
+    display: inline-block;
+}
+.login-form input {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #ccc;
+    padding-left: 1px 1px 1px 0.5em;
+}
+.btn-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0 5px;
+    border: 0;
+    border-radius: 3px;
+    background: #f76c31;
+    color: #fff;
+    
+}
+.login-member {
+    background: #fff;
+    padding: 2px 10px;
+    margin: 0;
+    list-style: none;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    letter-spacing: -1px;
+}
+.login-member li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.login-member .icon-right-open {
+    color:#f76c31;
+}
+.login-member a {
+    display:block;
+    padding: 8px 0;
 }
 .slogan {
     background: orange;
