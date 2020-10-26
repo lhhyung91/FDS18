@@ -115,7 +115,6 @@ a {
 }
 .menu-act .menu-button {
     color: #ff0;
-
 }
 .menu-act .menu-button::after {
     /* content: "상자"; */
@@ -130,7 +129,6 @@ a {
     display: none;
     position: absolute;
     top: 47px;
-    /* left: 0; */
     white-space: nowrap;
 }
 .sub-menu li, 
@@ -140,7 +138,6 @@ a {
 .sub-menu a {
     padding: 8px 0;
     margin-right: 10px;
-    background: #fff;
 }
 .sub-menu a::before {
     content: '\f192';
@@ -368,17 +365,67 @@ fieldset .user-email, fieldset .user-pw {
 .validation-list a:hover, .validation-list a:focus {
     color: red;
 }
+/* 웹 관련 용어 */
 .term {
-    position: relative;
-    margin-top: 20px;
-    border-radius: 7px;
+    /* position: relative; */
     border: 1px solid #aaa;
-    background: linear-gradient(to bottom, #eee, #ccc);
+    background: linear-gradient(#eee, #ccc);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
-.term .p {
-    position: absolute;
-    left: 10px;
+.term-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
+.term-list {
+    margin: 15px 0 0 0;
+    background-color: yellow;
+}
+.term-list dd {
+    
+}
+/* .odd, 
+.even {
+    overflow: hidden;
+    background-color: skyblue;
+}
+.even {
+    margin-top: 15px;
+}
+.term-list-subject, .term-list-brief{
+    background-color: pink;
+    float: right;
+    width: 145px;
+}
+.term-list-subject {
+    color: #296897;
+}
+.term-list-thumbnail {
+    background-color: lime;
+    float: left;
+}
+.term-list-thumbnail img{
+    display: block;    
+}
+.term-list-brief {
+    background-color: orange;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+.term-list dd {
+    margin-left: 0;
+}
+.even .term-list-subject,
+.even .term-list-brief {
+    float: left;
+}
+.even .term-list-thumbnail {
+    float: right;
+} */
+.term-list div:nth-child()
 .slogan {
     background: orange;
 }
