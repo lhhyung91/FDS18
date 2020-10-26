@@ -343,9 +343,6 @@ fieldset .user-email, fieldset .user-pw {
     display:block;
     padding: 8px 0;
 }
-.validation {
-
-}
 /* 유효성 검사 배너 */
 .validation-list {
     /* background-color: yellow; */
@@ -358,12 +355,12 @@ fieldset .user-email, fieldset .user-pw {
     border-radius: 20px;
     border: 1px solid #aaa;
     background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px, linear-gradient(to bottom, #eee, #ccc);
-    padding: 10px 10px 10px 50px;
+    padding: 8px 10px 8px 50px;
     margin-top: 10px;
 }
 
 .validation-list a:hover, .validation-list a:focus {
-    color: red;
+    color: #f00;
 }
 /* 웹 관련 용어 */
 .term {
@@ -382,11 +379,42 @@ fieldset .user-email, fieldset .user-pw {
 }
 .term-list {
     margin: 15px 0 0 0;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
+.term-list > div {
+    overflow: hidden;
+}
+.term-list div:nth-child(even) {
+    margin-top: 15px;
+}
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+.term-list-subject {
+    color: #296897;
+  }
+.term-list-thumbnail {
+    float: left;
+  }
+.term-list-thumbnail img {
+    display: block;
+  }
+.term-list-brief {
+    margin-top: 5px;
+    line-height: 1.5;
+  }
 .term-list dd {
-    
-}
+    margin-left: 0;
+  }  
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+    float: left;
+  }
+.term-list div:nth-child(even) .term-list-thumbnail {
+    float: right;
+  }
 /* .odd, 
 .even {
     overflow: hidden;
@@ -425,7 +453,56 @@ fieldset .user-email, fieldset .user-pw {
 .even .term-list-thumbnail {
     float: right;
 } */
-.term-list div:nth-child()
+/* .search-form {
+    border: 1px solid lightgray;
+    background: lightgray;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.search-form .fieldset {
+
+}
+.btn-search {
+    background: ;
+    font: white;
+} */
+/* 검색 폼 */
+.search-form {
+    background: #ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-bottom-color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 25px 10px;
+}
+.search-form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.search-form-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-form {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 0.5em;
+    height: 22px;
+    width: 190px;
+    /* flex-grow: 1; */
+    /* margin: 0 5px; */
+}
+.btn-search {
+    background-color: #333;
+    border: 1px solid #aaa;
+    color: #fff;
+    border-radius: 3px;
+    height: 22px;
+    padding: 0 10px;
+}
 .slogan {
     background: orange;
 }
