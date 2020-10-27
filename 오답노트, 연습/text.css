@@ -1,6 +1,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
-@import url(./fontello.css);
+@import url(../css/fontello.css);
 /* 숨김 제목 및 숨김 컨텐츠 */
 .a11y-hidden, legend {
     position: absolute;
@@ -187,7 +187,7 @@ a {
 }
 .visual {
     height: 120px;
-    background: yellow;
+    /* background: yellow; */
     position: relative;
 }
 .visual::before, .visual::after {
@@ -202,11 +202,11 @@ a {
     animation: bgAni 2000ms alternate infinite ease-in-out;
 }
 .visual::before {
-    background-image: url(../images/), url(./images/ani_flower_02.png);
+    background-image: url(../css/images/ani_flower_01.png), url(../css/images/ani_flower_02.png);
     background-position: 0 -10px, 670px 0;
 }
 .visual::after {
-    background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png);
+    background-image: url(../css/images/ani_flower_03.png), url(../css/images/ani_flower_04.png);
     background-position: 300px 0, 800px 0;
     animation-delay: 1000ms;
 }
@@ -230,7 +230,7 @@ a {
 }
 .group1 {
     width: 250px;
-    background: cyan;
+    /* background: cyan; */
 }
 .group2 {
     width: 380px;
@@ -239,6 +239,69 @@ a {
 .group3 {
     width: 190px;
     background: magenta;
+}
+/* 로그인 */
+.login {
+    background: radial-gradient(circle at right top,#f2b830, #f76c31);
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #ccc;
+}
+.login-heading {
+    margin: 0;
+    color: #ff0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-indent: 10px;
+}
+
+.login-form {
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+.login-form fieldset {
+    border-bottom: 1px solid #ccc;
+    border: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    position: relative;
+}
+.user-email, .user-pw {
+    vertical-align: 5px;
+}
+.login-form label {
+    display: inline-block;
+    width: 4em;
+}
+.login-form input {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #ccc;
+    padding: 1px 1px 1px 0.5em;
+}
+.btn-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0 5px; 
+    border: 0;
+    background: #f76c31;
+    color: #fff;    
+}
+.login-member {
+    background: #fff;
+    padding: 2px 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    letter-spacing: -1px;
 }
 .slogan {
     background: grey;

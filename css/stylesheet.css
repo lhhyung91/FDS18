@@ -305,7 +305,7 @@ fieldset .user-email, fieldset .user-pw {
     width: 90px;
     height: 22px;
     border: 1px solid #ccc;
-    padding-left: 1px 1px 1px 0.5em;
+    padding: 1px 1px 1px 0.5em;
 }
 .btn-login {
     position: absolute;
@@ -486,7 +486,7 @@ fieldset .user-email, fieldset .user-pw {
     align-items: center;
     justify-content: space-between;
 }
-.search-form {
+.search-form [name="search"] {
     border: 1px solid #aaa;
     border-radius: 3px;
     padding: 1px 1px 1px 0.5em;
