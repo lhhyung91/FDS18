@@ -522,8 +522,9 @@ fieldset .user-email, fieldset .user-pw {
     top: 0;
     right: 0;
 } */
+/* 공지사항 및 자료실 */
 .board {
-    background: yellow;
+    /* background: yellow; */
     position: relative;
     height: 200px;
     margin-top: 20px;
@@ -534,18 +535,26 @@ fieldset .user-email, fieldset .user-pw {
 .pds-more {
     display: none;
 }
-.is-active, .notice-list,
-.is-active, .pds-list,
-.is-active, .notice-more,
-.is-active, .pds-more {
+.is-active .notice-list,
+.is-active .pds-list,
+.is-active .notice-more,
+.is-active .pds-more {
     display: block;
 }
-
+  
 .tab {
-    float: left;
+    /* float: left; */
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
+.notice-heading {
+    left: 0;
+}
+.pds-heading {
+    left: 83px;
+}
 .tab a {
     display: block;
     border-radius: 5px 5px 0 0;
@@ -554,23 +563,29 @@ fieldset .user-email, fieldset .user-pw {
     color: #999;
     font-size: 1.4rem;
     font-weight: 400;
-    padding: 5px 10px;
+    padding: 5px 15px;
+}
+.is-active .tab {
+    z-index: 5;
 }
 .is-active .tab a {
-    color: #f76c31;
-    border: #f76c31 #f76c31 #fff #f76c31;
+    color: #ed702d;
+    border-color: #ed702d #ed702d #fff #ed702d;
     background: #fff;
-}
-.notice-list, .pds-list {
+}  
+.notice-list,
+.pds-list {
     width: 100%;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    background: skyblue;
-    position: absolute;
+    /* background: skyblue; */
+    padding-top: 45px;
+    min-height: 140px;
+    /* position: absolute;
     left: 0;
-    top: 45px;
-}
+    top: 45px; */
+}  
 .notice-list li,
 .pds-list li {
     display: flex;
@@ -579,31 +594,25 @@ fieldset .user-email, fieldset .user-pw {
 }
 .notice-list a,
 .pds-list a {
-    /* flex-grow: 1; */
+/* flex-grow: 1; */
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 280px;
-    background: lime;
+    /* background-color: lime; */
 }
 .notice-more,
 .pds-more {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: pink;
+    /* background-color: pink; */
     padding: 8px;
 }
 .notice-more::before,
 .pds-more::before {
     color: hsla(110, 50%, 30%, 1);
 }
-
-
-
-
-
-
 
 .slogan {
     background: orange;
