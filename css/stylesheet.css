@@ -720,6 +720,7 @@ fieldset .user-email, fieldset .user-pw {
 }
 .event {
     position: relative;
+    border-bottom: 1px solid #aaa;
 }
 .point-color {
     color: #ed702d;
@@ -748,8 +749,36 @@ fieldset .user-email, fieldset .user-pw {
     background: transparent url(./images/back_forward.png) 0 0 no-repeat; 
 }
 .btn-next {
-    background-position: -36px 0;
+    background-position: -36px 0; 
 }
+.related {
+    padding-top: 10px;
+}
+.related-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0 0 0;
+    height: 27px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;    
+    overflow: hidden;
+    transition: height 400ms, padding 400ms 400ms;
+}
+.related-list:hover {
+    height: 147px;
+    padding: 10px 0;
+}
+.related-list li{
+    padding: 2px 5px 3px 5px;
+}
+
+.related-list a{
+    display: block;
+    line-height: 20px;
+    padding-left: 25px;
+}
+
 .slogan {
     background: orange;
 }
