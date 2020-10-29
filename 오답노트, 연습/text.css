@@ -234,11 +234,9 @@ a {
 }
 .group2 {
     width: 380px;
-    background: blue;
 }
 .group3 {
     width: 190px;
-    background: magenta;
 }
 /* 로그인 */
 .login {
@@ -316,7 +314,7 @@ a {
     padding: 8px 0;
 } */
 .validation {
-    background: red;
+    /* background: red; */
 }
 .validation-list {
     margin: 25px 0 0 0;
@@ -332,13 +330,48 @@ a {
     margin-top: 10px;
 }
 .term {
-    border: 1px solid lightgray;
-    background: lightgray;
+    border: 1px solid #aaa;
+    background: linear-gradient(#eee, #ccc);
+    border-radius: 5px;
     padding: 15px;
+    margin-top: 15px;
 }
 .term-heading {
     font-size: 1.6rem;
-    margin: 0;    
+    margin-top: 15px;
+    padding: 0;
+    margin: 0;
+}
+.term-list {
+
+}
+.term-list > div {
+    overflow: hidden;
+}
+.term-list-subject {
+    float: right;
+    width: 140px;
+    color: #296897;
+}
+.term-list-thumbnail {
+    float: left;
+    margin-left: 0;
+}
+.term-list-brief {
+    float: right;
+    margin-left: 0;
+    width: 140px;
+}
+.search-form {
+    border: 1px solid #aaa;
+    border-radius: 15px 15px 0 0;
+    background: #ccc linear-gradient(#ccc, #eee);
+    padding: 15px 25px 10px 25px;
+}
+.search-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .slogan {

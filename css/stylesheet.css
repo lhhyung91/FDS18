@@ -705,6 +705,51 @@ fieldset .user-email, fieldset .user-pw {
 .news-more::before {
     color: hsla(110, 50%, 30%, 1);
 }
+/* 신규이벤트 및 관련 사이트 */
+
+.gradient-box {
+    background: #ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+}
+.event-heading, .related-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+.event {
+    position: relative;
+}
+.point-color {
+    color: #ed702d;
+}
+.event-thumbnail img {
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 0 0 #aaa;
+}
+.event-brief {
+    line-height: 1.5;
+}
+.event-brief em{
+    font-size: normal;
+}
+.btn-event {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn-prev, .btn-next {
+    border: 0;
+    overflow: hidden;
+    height: 18px;
+    padding: 18px 0 0 0;
+    width: 19px;
+    background: transparent url(./images/back_forward.png) 0 0 no-repeat; 
+}
+.btn-next {
+    background-position: -36px 0;
+}
 .slogan {
     background: orange;
 }
