@@ -415,58 +415,7 @@ fieldset .user-email, fieldset .user-pw {
 .term-list div:nth-child(even) .term-list-thumbnail {
     float: right;
   }
-/* .odd, 
-.even {
-    overflow: hidden;
-    background-color: skyblue;
-}
-.even {
-    margin-top: 15px;
-}
-.term-list-subject, .term-list-brief{
-    background-color: pink;
-    float: right;
-    width: 145px;
-}
-.term-list-subject {
-    color: #296897;
-}
-.term-list-thumbnail {
-    background-color: lime;
-    float: left;
-}
-.term-list-thumbnail img{
-    display: block;    
-}
-.term-list-brief {
-    background-color: orange;
-    margin-top: 5px;
-    line-height: 1.5;
-}
-.term-list dd {
-    margin-left: 0;
-}
-.even .term-list-subject,
-.even .term-list-brief {
-    float: left;
-}
-.even .term-list-thumbnail {
-    float: right;
-} */
-/* .search-form {
-    border: 1px solid lightgray;
-    background: lightgray;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    justify-content: center;
-}
-.search-form .fieldset {
 
-}
-.btn-search {
-    background: ;
-    font: white;
-} */
 /* 검색 폼 */
 .search-form {
     background: #ccc linear-gradient(#ccc, #eee);
@@ -503,25 +452,7 @@ fieldset .user-email, fieldset .user-pw {
     height: 22px;
     padding: 0 10px;
 }
-/* .board {
-    position: relative;
-}
-.notice-heading, .pds-heading {
-    float: left;
-}
-.notice-list, .pds-list {
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
-.pds-list {
-    display: none;
-}
-.pds-more, .notice-more {
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
+
 /* 공지사항 및 자료실 */
 .board {
     /* background: yellow; */
@@ -702,7 +633,8 @@ fieldset .user-email, fieldset .user-pw {
     right: -8px;
     padding: 8px;
 }
-.news-more::before {
+.news-more::before, 
+.favorite-more::before {
     color: hsla(110, 50%, 30%, 1);
 }
 /* 신규이벤트 및 관련 사이트 */
@@ -713,7 +645,8 @@ fieldset .user-email, fieldset .user-pw {
     border-radius: 5px;
     padding: 10px;
 }
-.event-heading, .related-heading {
+/* group3 [class$="heading"] { */
+.event-heading, .related-heading, .favorite-heading {
     font-size: 1.6rem;
     font-weight: 700;
     margin: 0;
@@ -779,6 +712,97 @@ fieldset .user-email, fieldset .user-pw {
     padding-left: 25px;
 }
 
+/* .favorite {
+    border: 1px solid #aaa;
+    margin-top: 15px;
+    padding: 10px;
+}
+.favorite-heading {
+    margin: 0;
+}
+.favorite-list {
+    padding-left: 0;
+    list-style: none;
+} */
+
+/* 인기사이트 */
+.favorite {
+position: relative;
+margin-top: 20px;
+}
+.favorite-list {
+    /* background-color: yellow; */
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+    overflow: hidden;
+    /* counter-reset: number; */
+}
+.favorite-list li {
+    /* display: flex; */
+    /* flex-flow: row; */
+    /* align-items: center; */
+    position: relative;
+    /* background-color: pink; */
+    margin-top: 8px;
+    counter-increment: number;
+}
+.favorite-list li::before{
+    /* counter-increment : numbering;  */
+    /* content : counter(numbering); */
+    /* border: 1px solid #ccc; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    content : counter(number);
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    background-color: #999; 
+    border-radius: 2px;
+    /* float: left; */
+}
+.favorite-list a {
+    /* background-color: aqua; */
+    margin: 0 10px 0 20px;
+    display:block;
+    /* flex-grow: 1; */
+}
+.up, .stop, .down {
+    /* display: inline-block; */
+    font-style: normal;
+    width: 9px;
+    height: 11px;
+    overflow: hidden;
+    padding-top: 11px; 
+    background-image: url(./images/rank.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+}
+.up {
+    background-position: 0 0;
+}
+.stop {
+    background-position: 0 50%;
+}
+.down {
+    background-position: 0 100%;
+}
+
+.favorite-more {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 8px;
+}
+.favorite-more::before {
+    color: hsla(110, 50%, 30%, 1);
+}
 .slogan {
     background: orange;
 }
