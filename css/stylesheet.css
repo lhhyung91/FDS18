@@ -890,6 +890,7 @@ margin-top: 20px;
 .guide-list a {
     display: block;
     padding: 8px;
+    text-transform: uppercase;
 }
 
 /* 주소 및 저작권 */
