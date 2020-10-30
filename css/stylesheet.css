@@ -42,7 +42,8 @@ a {
 .header, 
 .visual, 
 .main, 
-.slogan {
+.slogan,
+.footer-inner {
     width: 940px;
     margin: 0 auto;
 }
@@ -820,7 +821,7 @@ margin-top: 20px;
     bottom: -35px;
 }
 .slogan-heading::after {
-    counter:"";
+    content:"";
     position: absolute;
     width: 100%;
     height: 100%;
